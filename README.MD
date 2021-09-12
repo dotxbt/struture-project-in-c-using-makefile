@@ -1,16 +1,17 @@
 # STRUCTURE PROJECT IN C USING MAKEFILE
+Build project using Makefile
 
-## Build Project
+## 1. Build Project
 ```bash
 make
 ```
 
-## Run Project
+## 2. Run Project
 ```bash
 make run
 ```
 
-## Clean Project
+## 3. Clean Project
 ```bash
 make clean
 ```
