@@ -13,11 +13,11 @@ OBJ := $(patsubst *.c, %.o, $(SRC))
 all: $(TARGET)
 $(TARGET): $(OBJ)
 	@mkdir -p bin
-	$(CC) -o $@ $^
+	@$(CC) -o $@ $^
 %.o: %.c
-	$(CC $(CFLAGS) -c $<
+	@$(CC $(CFLAGS) -c $<
 clean:
-	rm -rf $(TARGET) *.o bin/
-run:
+	@rm -rf $(TARGET) *.o bin/
+run: all
 	@./$(TARGET)
 .PHONY: all clean
