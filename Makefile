@@ -1,15 +1,15 @@
-#compiler
+# Compiler
 CC := gcc
 CFLAGS := -Wall -g
 
-#build target
+# Build Target
 TARGET := bin/app
 
 # Source
 SRC := $(shell find . -name "*.c")
 OBJ := $(patsubst *.c, %.o, $(SRC))
 
-# Run
+# Make Command
 all: $(TARGET)
 $(TARGET): $(OBJ)
 	@mkdir -p bin
